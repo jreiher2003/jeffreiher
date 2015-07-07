@@ -2,7 +2,7 @@
     /*border: 1px solid red !important;*/
 }
 
-* {
+/** {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -68,7 +68,7 @@
 .col-12 {
     width: 100%;
 }
-
+*/
 body {
 
 }
