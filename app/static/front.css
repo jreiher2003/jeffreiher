@@ -1,3 +1,9 @@
+.pure-g {
+    width: 100%;
+    margin: 10px;
+    /*display: flex;*/
+}
+
 body {
 
 }
@@ -21,7 +27,7 @@ span {
 }
 
 .footer {
-    margin-top: 150px;
+    margin-top: 140px;
     text-align: center;
 }
 
