@@ -2,20 +2,16 @@
 <html>
 <head>
 	<title>JR</title>
-	
-	<link rel="stylesheet" href="../static/front.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="../static/front.css"> -->
+	<link rel="stylesheet" href="../static/front-mobile.css">
 </head>
 
-<body>
-	<div class="grid">
-
-		<div class="row">
-			<div class="col-2">
-				<img src="http://placehold.it/150x150">
-			</div>
-			<div class="col-3 fronts">Jeff Reiher <span>web developer</span>
-			</div>
-			<div class="col-7">
+<body class="mobile">
+	<div class="grid-m">
+		<div class="row-m">
+			<div class="col-12-m">
 				 <h1 class="tagline">... because 
 				  <span class="change-container">
 				    <span class="changing">exercises</span> 
@@ -26,28 +22,41 @@
 				  will make you perfect</h1>
 			</div>
 		</div>
+
+		<div class="row-m">
+			<div class="col-12-m">
+				<img class="mobile-img" src="http://placehold.it/150x150">
+			</div>
+		</div>
+		<div class="row-m">
+			<div class="col-12-m fronts-m">Jeff Reiher <span>web developer</span>
+			</div>
+		</div>
 		<hr>
 
-		<div class="row">
-			<div class="col-6 click-to-call">
-				<img src="http://placehold.it/350x65">
+		<div class="row-m">
+			<div class="col-12-m ">
+				<button class="click-to-call" ><i class="fa fa-phone"></i>&nbsp;Call Me</button>
 			</div>
-			<div class="col-6 click-to-text">
-				<img src="http://placehold.it/350x65">
+		</div>
+		<div class="row-m">
+			<div class="col-12-m click-to-text">
+				<button><i class="fa fa-file-text"></i>&nbsp;Text Me</button>
 			</div>
 
 		</div>
 
-		<div class="row">
-			<div class="col-6 info">
+		<div class="row-m">
+			<div class="col-12-m info">
 				<ul>Who I am?
 					<li>1</li>
 					<li>2</li>
 					<li>3</li>
 				</ul>
 			</div>
-
-			<div class="col-6 info">
+		</div>
+		<div class="row-m">
+			<div class="col-12-m info">
 				<ul>Who I like to work on?
 					<li>1</li>
 					<li>2</li>
@@ -56,10 +65,11 @@
 			</div>
 		</div>
 
-		<div class="row footer">
-			<div class="col-12">
+		<div class="row-m footer">
+			<div class="col-12-m">
 				<hr>
-				<a href="#">Github</a> | <a href="#">twitter</a> | <a href="#">facebook</a> <br>email: me@jeffreiher.com 
+
+				<button class="social"><a href="#"><i class="fa fa-github-square"></i>&nbsp; Github</a></button> <button class="social"><a href="#"><i class="fa fa-twitter"></i>&nbsp;twitter</a></button><button class="social"><i class="fa fa-facebook-official"></i><a href="#">&nbsp;facebook</a></button> <br>email: me@jeffreiher.com 
 			</div>
 
 		</div>
