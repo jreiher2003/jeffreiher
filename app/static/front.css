@@ -1,110 +1,62 @@
 * {
+    box-sizing: border-box;
     /*border: 1px solid red !important;*/
 }
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
 }
-
-.grid {
-    margin: 0 auto;
-    max-width: 1200px;
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+img {
     width: 100%;
+    height: auto;
 }
 
-.row {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
+img.profile {
+  border-radius: 50%;
 }
-
-.col-1 {
-    width: 8.33%;
+.fronts {
+  text-align: center;
+  font-size: xx-large;
 }
-
-.col-2 {
-    width: 16.66%;
+span.small {
+  font-size: xx-small;
+  font-style: italic;
 }
-
-.col-3 {
-    width: 25%;
+ul {
+  list-style-type: none;
+  margin-bottom: 1em;
 }
-
-.col-4 {
-    width: 33.33%;
+li {
+  margin-top: .5em;
 }
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-body {
-
-}
-
-.fronts{
-    margin-top: 115px;
-    font-size: 40px;
-}
-
-span {
-    font-size: x-small;
-    padding: 2px;
-}
-
-.click-to-text {
-    /*margin-left: 490px;*/
-}
-
-.info {
-
-}
-
 .footer {
-    margin-top: 150px;
-    text-align: center;
+  text-align: center;
+  margin-top: 1em;
 }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
 
 /*  tag line becasue with make you perfect*/
 
-body{
+/*body{
   background: #FDF9F9;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color:#000;
 }
 .tagline {
-  /*margin-top: 100px;*/
+  margin-top: 100px;
   text-align: center;
   font-size: 1em;
 }
@@ -144,4 +96,4 @@ body{
     10% { opacity: 1; height: 1.2em; }
     20% { opacity: 1; height: 1.2em; }
     28% { opacity: 0; height:2em;}
-    100% { opacity: 0; }
+    100% { opacity: 0; }*/
