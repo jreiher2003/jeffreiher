@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid red !important; */
+     border: 1px solid red !important; 
 }
 .row:after {
     content: "";
@@ -19,6 +19,12 @@ img, object, video {
     height: auto;*/
     max-width: 100%;
 }
+
+/* tap targets */
+nav a, button {
+  min-width: 1.5em;
+  min-height: 1.5em;
+}
 div.header {
   background-color: #F1EAEA;
   height: 2em;
@@ -28,7 +34,7 @@ div.header {
 }
 
 img.profile {
-  clear: left;
+  /*clear: left;*/
   border-radius: 50%;
   /* border: .75em solid #FF0026;
   width: 100%;
@@ -37,7 +43,7 @@ img.profile {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   border: .125em dotted black;
-  margin-left: 1em;
+  margin-left: 2.5em;
 }
 .fronts {
   text-align: center;
