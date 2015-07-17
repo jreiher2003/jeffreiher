@@ -48,37 +48,37 @@
 
 
 body,h1,h2,h3,p,a,span, {
-  font-family: sans-serif;
-  font-size: 1em;
-}
+      font-family: sans-serif;
+      font-size: 1em;
+  }
+
 .profile_pic, .profile_name {
-  text-align: center;
-  margin-top: 50px;
-  
-}
+      text-align: center;
+      margin-top: 50px;
+
+  }
 .profile_pic img {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  /*box-shadow: 0 0 8px 1px black;*/
-   box-shadow: 10px 10px 5px #888888;
-   /*border: .25em dotted;*/
+     border-radius: 50%;
+  
+     box-shadow: 10px 10px 5px #888888;
+  /*border: .25em dotted;*/
 }
 .profile_name {
   font-size: 2em;
 }
 .divide hr {
   /*border-color:red;*/
-   /*box-shadow: 10px 10px 5px #888888;*/
-   box-shadow: 0 0 5px 1px black;
-   border: .08em dotted;
-   margin-bottom: 50px;
-}
-.click-to-call img, .click-to-text img {
+  /*box-shadow: 10px 10px 5px #888888;*/
+  box-shadow: 0 0 5px 1px black;
+  border: .08em dotted;
+  margin-bottom: 50px;
   width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 20px;
+}
+.click-to-call button, .click-to-text button {
+   width: 100%; 
+   height: auto; 
+   border-radius: 5px;
+   margin-bottom: 20px;
 }
 div.info {
   width: 100%;
@@ -96,7 +96,6 @@ div.info ul li {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  /*padding-top: 15px;*/
 }
 
 .footer a {
@@ -104,5 +103,38 @@ div.info ul li {
 }
 .footer p {
   margin-top: 8px;
-  text-transform: capitalize;
+  text-transform: none;
 }
+
+@media screen and (min-width: 522px) and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .profile_pic {
+        text-align: left;
+        margin-left: 35px;
+        width: 33%;
+        order: 0;
+    }
+    .profile_name {
+        margin-left: 85px;
+        margin-top: 175px;
+}
+
+
+    .divide {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .click-to-call, .click-to-text {
+        width: 50%;
+    }
+    .click-to-call button, .click-to-text button {
+        width: 230px;
+        height: 50px;
+        margin-right: 5px;
+        margin-left: 35px;
+    }
+}
+  
