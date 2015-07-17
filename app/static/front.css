@@ -76,7 +76,7 @@ body,h1,h2,h3,p,a,span, {
 }
 .click-to-call button, .click-to-text button {
    width: 100%; 
-   height: auto; 
+   height: 50px; 
    border-radius: 5px;
    margin-bottom: 20px;
 }
@@ -106,7 +106,7 @@ div.info ul li {
   text-transform: none;
 }
 
-@media screen and (min-width: 522px) and (max-width: 700px) {
+@media screen and (min-width: 522px) and (max-width: 790px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -120,7 +120,7 @@ div.info ul li {
     .profile_name {
         margin-left: 85px;
         margin-top: 175px;
-}
+    }
 
 
     .divide {
@@ -136,5 +136,53 @@ div.info ul li {
         margin-right: 5px;
         margin-left: 35px;
     }
+}
+
+@media screen and (min-width: 791px) {
+     .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+    .profile_pic img {
+        border-radius: 20%;
+        text-align: left;
+        margin-left: 35px;
+        width: 200px;
+        height: 200px;
+        order: 0;
+    }
+    .profile_name {
+        /*margin-left: 100px;*/
+        margin-top: 200px;
+        font-size: 3em;
+        width: 50%;
+        /*float: right;*/
+    }
+     .divide {
+        width: 100%;
+        margin-top: 15px;
+    }
+     .click-to-call, .click-to-text {
+        width: 50%;
+    }
+    .click-to-call button, .click-to-text button {
+        width: 250px;
+        height: 65px;
+        margin-right: 35px;
+        margin-left: 35px;
+        /*padding-right: 20px;*/
+    }
+    
+    .info.dt1 {
+      width: 50%;
+      order: 2;
+  }
+    .info.dt1 {
+      width: 50%;
+      order: 3;
+      float: right;
+    }
+
 }
   
